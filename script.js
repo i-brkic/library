@@ -1,14 +1,20 @@
+// array filled so that the results can be seen
 const myLibrary = [
   {
     name: "El túnel",
     author: "Ernesto Sábato",
-    releaseDate: 1948,
+    releaseDate: "1948",
   },
 
   {
     name: "Sobre héroes y tumbas",
     author: "Ernesto Sábato",
-    releaseDate: 1961,
+    releaseDate: "1961",
+  },
+  {
+    name: "Abaddón el exterminador",
+    author: "Ernesto Sábato",
+    releaseDate: "1974",
   },
 ];
 
@@ -28,8 +34,18 @@ function addBookToLibrary() {
     Name: ${book.name} 
     Author: ${book.author} 
     Released: ${book.releaseDate}`;
+    bookFrame.classList.add("book");
     body.appendChild(bookFrame);
   });
 }
 
-addBookToLibrary();
+// addBookToLibrary();
+
+//displaying the form after button press
+
+const button = document.querySelector(".button");
+const form = document.querySelector(".form");
+
+button.addEventListener("click", function () {
+  form.classList.toggle("hidden");
+});
