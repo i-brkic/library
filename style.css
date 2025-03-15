@@ -5,17 +5,20 @@ body {
 
 .book {
   text-align: center;
+  font-family: monospace;
   margin-bottom: 10px;
   padding: 10px;
-  height: 120px;
+  height: 110px;
   width: 200px;
   background-color: blanchedalmond;
   color: #444;
 }
 
 .button {
+  font-family: monospace;
   margin-top: 10px;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .form {
@@ -26,4 +29,8 @@ body {
 
 .hidden {
   display: none;
+}
+
+.submit {
+  margin-top: 10px;
 }
