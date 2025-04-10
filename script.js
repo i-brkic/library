@@ -1,10 +1,12 @@
 const myLibrary = [];
 
-function Book(name, author, releaseDate) {
-  this.name = name;
-  this.author = author;
-  this.releaseDate = releaseDate;
-  this.id = crypto.randomUUID();
+class Book {
+  constructor(name, author, releaseDate) {
+    this.name = name;
+    this.author = author;
+    this.releaseDate = releaseDate;
+    this.id = crypto.randomUUID();
+  }
 }
 
 const list = document.querySelector(".book-list");
